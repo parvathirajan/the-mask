@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/parvathirajan/the-mask/main/the-mask.png" width="100%" alt="the-mask-logo">
+<img src="https://raw.githubusercontent.com/parvathirajan/the-mask/main/the-mask.png" width="200" alt="the-mask-logo">
 </p>
 
 <h2 align="center">
