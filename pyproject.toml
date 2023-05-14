@@ -4,8 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "the-mask"
-version = "0.0.4"
-# dynamic = ["version"]
+dynamic = ["version"]
 license = { text = "MIT" }
 authors = [
   { name="Parvathirajan Natarajan", email="parvathi_rajan@hotmail.com" },
