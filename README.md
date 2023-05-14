@@ -1,3 +1,8 @@
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/parvathirajan/the-mask/main/the-mask.png" width="100%" alt="the-mask-logo">
+</p>
+
 <h2 align="center">
     A package to hide/mask PII information in the JSON object.
 </h2>
