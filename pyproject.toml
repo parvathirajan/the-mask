@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-mask"
+version = "0.0.4"
+# dynamic = ["version"]
+license = { text = "MIT" }
+authors = [
+  { name="Parvathirajan Natarajan", email="parvathi_rajan@hotmail.com" },
+]
+description = "A package to hide/mask PII information in the JSON object"
+keywords = [
+  "masking",
+  "PII",
+  "data-security",
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/parvathirajan/the-mask"
+"Bug Tracker" = "https://github.com/parvathirajan/the-mask/issues"
+"Source Code" = "https://github.com/parvathirajan/the-mask"
+
+[tool.black]
+target-version = ['py39', 'py310']
+exclude = '''
+(
+    asv_bench/env
+  | \.egg
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | setup.py
+)
+'''
+skip-magic-trailing-comma = true
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+skip_gitignore = true
+skip_glob = ["src/blib2to3", "tests/data", "profiling"]
+known_first_party = ["black", "blib2to3", "blackd", "_black_version"]
+
