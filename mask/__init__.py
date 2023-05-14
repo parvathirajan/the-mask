@@ -1,3 +1,6 @@
+from mask._common import mask_email, mask_string, randnum, znum
+from mask.mask import mask
+
 # module level doc-string
 __doc__ = """
 the-mask - python library for an easiest way to mask PII data
@@ -16,3 +19,5 @@ Main Features
   - More flexible and reliable way to automate the masking with various options
   - Allows users to choose how to treat different kind of data based on the keys
 """
+
+__all__ = ["mask", "mask_email", "mask_string", "znum", "randnum"]

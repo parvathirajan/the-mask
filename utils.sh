@@ -9,7 +9,7 @@ then
 elif [ $1 = "test" ]
 then
     pipenv run pytest -vvv tests/
-elif [ $1 = "build" ]
+elif [ $1 = "test-deploy" ]
 then
     rm -frv ./dist/*
     echo "Previous Dist removed"

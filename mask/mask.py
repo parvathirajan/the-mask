@@ -1,7 +1,7 @@
 import copy
 from typing import Dict, Optional
 
-from mask.common import (
+from mask._common import (
     __EMAIL_TYPES,
     __NUMBER,
     __STRING_TYPES,

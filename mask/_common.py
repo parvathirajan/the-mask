@@ -141,21 +141,16 @@ def mask_email(email: str, fill: Optional[str] = "*"):
 
 def znum(num: Union[str, float, int]):
     """
-    Get the single string to mask
+    Get the number to make it as 0 (Zero)
 
     Parameters
     ----------
     #### num: `Union[str, float, int]`
-        - String to mask
-
-    #### fill : `Optional[str] = '*'` (default '*')
-        - character to fill while masking the data
-        - For example, if the user wants to mask the data with '#'
-        in the place of characters then the fill should be passed as '#'
+        - Number to make it zero
 
     Returns
     -------
-    - `str` : Will return the masked string
+    - `str` or `float` or `int` : Same as the input size
 
     Usage
     ------

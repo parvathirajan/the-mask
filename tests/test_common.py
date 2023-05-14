@@ -1,4 +1,4 @@
-from mask.common import mask_email, mask_string, randnum, znum
+from mask._common import mask_email, mask_string, randnum, znum
 
 
 def test_mask_string():
